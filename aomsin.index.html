@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องคิดเลข & ตัววิเคราะห์ตัวเลข</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="calculator">
+            <h3>เครื่องคิดเลขพื้นฐาน</h3>
+            <input type="text" id="display" class="display" value="0" disabled>
+            
+            <div class="buttons">
+                <button class="btn func" value="sin">sin</button>
+                <button class="btn func" value="cos">cos</button>
+                <button class="btn func" value="tan">tan</button>
+                <button class="btn func" value="^">xʸ</button>
+                
+                <button class="btn func" value="log">log</button>
+                <button class="btn func" value="sqrt">√</button>
+                <button class="btn func" value="pi">π</button>
+                <button class="btn func" value="e">e</button>
+                
+                <button id="clear" class="btn clear">C</button>
+                <button class="btn operator" value="/">÷</button>
+                <button class="btn operator" value="*">×</button>
+                <button class="btn operator" value="-">-</button>
+
+                <button class="btn number" value="7">7</button>
+                <button class="btn number" value="8">8</button>
+                <button class="btn number" value="9">9</button>
+                <button class="btn operator" value="+">+</button>
+
+                <button class="btn number" value="4">4</button>
+                <button class="btn number" value="5">5</button>
+                <button class="btn number" value="6">6</button>
+
+                <button class="btn number" value="0">0</button>
+                <button class="btn number" value="3">3</button>
+                <button class="btn number" value="2">2</button>
+
+                <button class="btn number" value="1">1</button>
+                <button class="btn number" value=".">.</button>
+                <button id="equal" class="btn equal" value="=">=</button>
+            </div>
+        </div>
+        
+        <div class="analyzer">
+            <h3>ตัววิเคราะห์ตัวเลข</h3>
+            
+            <div class="section">
+                <h4>การแยกตัวประกอบเฉพาะ</h4>
+                <input type="number" id="prime-input" placeholder="ใส่จำนวนเต็มบวก">
+                <button id="analyze-prime">แยกตัวประกอบ</button>
+                <p>ผลลัพธ์: <span id="prime-result"></span></p>
+            </div>
+            
+            <div class="section">
+                <h4>การแปลงฐานตัวเลข (ฐาน 10 เป็นฐาน n)</h4>
+                <input type="number" id="base-dec-input" placeholder="จำนวนเต็มฐาน 10">
+                <input type="number" id="base-n-input" placeholder="ฐานใหม่ (2 - 36)" min="2" max="36">
+                <button id="convert-base">แปลงฐาน</button>
+                <p>ผลลัพธ์: <span id="base-result"></span></p>
+            </div>
+        </div>
+
+    </div>
+    
+   <script src="script.js"></script> 
+</body>
+</html>
